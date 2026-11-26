@@ -1,26 +1,15 @@
 
 {% extends "base.html" %}
-
 {% block title %}Skills | Vishnu Portfolio{% endblock %}
-
 {% block content %}
-
 <section class="section">
-
     <h1>Technical Skills</h1>
-
     <div class="skills-container">
-
         {% for skill in skills %}
-
         <div class="skill-card">
             {{ skill }}
         </div>
-
         {% endfor %}
-
     </div>
-
 </section>
-
 {% endblock %}

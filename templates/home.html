@@ -1,54 +1,39 @@
 
 {% extends "base.html" %}
-
 {% block title %}Home | Vishnu Vardhan{% endblock %}
-
 {% block content %}
-
 <section class="hero">
-
     <div class="hero-content">
-
         <p class="hero-tag">WELCOME TO MY PORTFOLIO</p>
-
         <h1>
             Hi, I'm <span>Vishnu Vardhan</span>
         </h1>
-
         <h2>Python Full Stack Developer</h2>
-
         <p class="hero-description">
             I build modern web applications using Python, FastAPI,
             Java, Spring Boot and modern technologies.
             I enjoy solving problems and turning ideas into
             practical applications.
         </p>
-
         <div class="hero-tech">
             <span>Python</span>
             <span>FastAPI</span>
             <span>Java</span>
             <span>MySQL</span>
         </div>
-
         <div class="hero-actions">
             <a href="{{ url_for('projects') }}" class="btn">
                 Explore Projects →
             </a>
-
             <a href="{{ url_for('contact') }}" class="secondary-btn">
                 Contact Me
             </a>
         </div>
-
     </div>
-
     <div class="hero-image">
         <img
             src="{{ url_for('static', path='images/vishnupassportjob - Copy.jpg') }}"
             alt="Vishnu Vardhan - Developer">
     </div>
-
 </section>
-
 {% endblock %}
